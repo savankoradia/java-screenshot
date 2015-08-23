@@ -34,10 +34,8 @@ public class ProcessCapture extends Thread {
 
     public void run() {
         try {
-            System.out.println("Start/Resuming");
             while (true) {
                 this.nextRandomMinute = this.getNextRandomMinute();
-                System.err.println("Sleeping for: " + this.nextRandomMinute);
                 this.capture();
                 this.sleep(this.nextRandomMinute * 60 * 1000);
             }

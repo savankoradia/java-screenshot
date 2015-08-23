@@ -182,8 +182,6 @@ public class Screenshot extends javax.swing.JFrame {
         try {
             System.err.println("Stoping..!!!");
             this.processCapture.capture();
-//            this.processCapture.sleep(0);
-//            this.processCapture.wait();
             this.processCapture.interrupt();
         } catch (Exception ex) {
         }
